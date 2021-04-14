@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="main__title">Title</h1>
+        <p class="main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, error?</p>
+        <form class="main__form">
+            <input type="text" class="main__name-inp" placeholder="Name">
+            <input type="number" class="main__font-inp" placeholder="Title size">
+            <input type="number" class="main__font-text-inp" placeholder="Text size">
+            <select class="main__select">
+                <option class="main__opt" value="serif">serif</option>
+                <option class="main__opt" value="sans-serif">sans-serif</option>
+                <option class="main__opt" value="monospace">monospace</option>
+                <option class="main__opt" value="cursive">cursive</option>
+                <option class="main__opt" value="fantasy">fantasy</option>
+            </select>
+            <textarea class="main__textarea" cols="30" rows="10" placeholder="Text"></textarea>
+            <div class="main__inner-color">
+                <div class="main__color">
+                    <label class="main__label" for="color-text">Text color</label>
+                    <input type="color" id="color-text"  onchange="color(event)"  class="main__color-text">
+                </div>
+                <div class="main__color">
+                    <label class="main__label" for="color-btn">Button background</label>
+                    <input type="color"  onchange="color(event)" id="color-btn" value="#DCDCDC"  class="main__color-btn">
+                </div>
+                <div class="main__color">
+                    <label class="main__label" for="color-bg">Background color</label>
+                    <input type="color" onchange="color(event)" id="color-bg" value="#ffffff" class="main__color-bg">
+                </div>
+            </div>
+            <button onclick="color(event)" class="main__btn">Send</button>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
