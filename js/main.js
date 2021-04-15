@@ -11,17 +11,18 @@ var sizeInp = document.querySelector('.main__font-inp');
 var sizeInpText = document.querySelector('.main__font-text-inp');
 var textInp = document.querySelector('.main__textarea');
 var opt = document.querySelector('.main__opt');
+var select = document.querySelector('.main__select');
+var icon = document.querySelector('.main__img');
 
 function color(e){
    e.preventDefault();
    body.style.backgroundColor = bgColor.value;
-   for(let i = 0; i < opt.length; i++){
-      body.style.fontFamily = opt[i].value;
-    };
+   body.style.fontFamily = select.value;
    btn.style.backgroundColor = btnColor.value;
    title.style.color = textColor.value;
    text.style.color = textColor.value;
    btn.style.color = textColor.value;
+   icon.style.color = textColor.value
    title.style.fontSize = sizeInp.value+"px";
    text.style.fontSize = sizeInpText.value+"px";
     for(let i = 0; i < label.length; i++){
